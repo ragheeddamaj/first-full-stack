@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MainApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Property Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <ul class="nav nav-tabs">
+                    <li><a href="#/" role="presentation" class="active">Home</a></li>
+                    <li><a href="#/properties" role="presentation">properties</a></li>
+                    <li><a href="#/aboutus" role="presentation">About Us</a></li>
+                    <li><a href="#/contact" role="presentation">Contact Us</a></li>
+                    <li><a href="#/userlogin" role="presentation">Log in</a></li>
+                </ul>
+<!--
+
+                <h1>Welcome in the #1 website of real estate</h1>
+                <h2>We Buy, Sell , And rent Properties</h2>
+-->
+
+                <div ng-view>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="Components/Home/home.js"></script>
+    <script src="Components/Home/homeservice.js"></script>
+    <script src="Components/About-us/aboutus.js"></script>
+    <script src="Components/contact-us/contactus.js"></script>
+    <script src="Components/Properties/prty.js"></script>
+</body>
+
+</html>
